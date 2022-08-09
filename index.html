@@ -1,1 +1,303 @@
-homepage
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jiarong Xu - Fudan University">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/homeicon.png">
+
+    <title>Jiarong Xu's Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
+          <a class="navbar-brand" href="#">Jiarong Xu (许嘉蓉)</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publication">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#award">Awards</a></li> -->
+        </ul>
+
+          <!--
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img height="250" src="img/jiarongxu.jpeg" align="left" hspace="6" style="margin-left:-15p;margin-right:15px">
+        <p></p>
+        <p> I am currently an assistant professor at Department of Information Management and Business Intelligence, Fudan University. I obtained my Ph.D. degree from Zhejiang University in September 2021, co-advised by <a href="http://yangy.org/">Yang Yang</a> and Jiangang Lu. I have been visiting UCLA (working with <a href="http://web.cs.ucla.edu/~yzsun/">Yizhou Sun</a>) from Nov, 2019 to Apr, 2020.
+        	<!-- I obtained my bachelor degree in Electrical Engineering and Automation from Donghua University in 2016.  -->
+        </p>
+        <p> My research interests include graph representation learning, social network analysis and data mining, including but not limited to: network denoising, robustness of machine learning models on graphs. </p>
+        <p> jiarongxu {at} fudan [dot] edu [dot] cn </p>
+
+        <p> <u><I> Motivated students are welcome to contact for brainstorming!
+        <a href="mailto:jiarongxu@fudan.edu.cn" class="btn-hire">Contact</a>  </I></u>
+        </p>
+      </div>
+    </div>
+
+    <a name="research"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Research Work</h2>
+        </div>
+      
+        <div class="page-header">
+            <h4>Robust Graph Models</h4>
+        </div>
+        <img width="450" src="works/enet/enet.gif" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px">
+      
+        <p>
+          Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements or even malicious attacks. This in turn results in inaccurate results when performing network analysis or modeling on these ﬂawed networks.<br><br>
+          
+          Our research aims to reconstruct a reliable network from a ﬂawed one, a process referred to network enhancement. More specifically, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to complement the missing links that do indeed exist in the real world yet remain unobserved.<br><br>
+          
+          From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of downstream task to guide the network denoising process (NetRL, <a href="works/tkde2021_netrl_xu.pdf">Xu et al, TKDE'21</a>). 
+          From another perspective, we construct a self-supervised learning framework that identifies missing links and nosiy links simultaneously by leveraging the mutual influence of them (E-Net, <a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>).<br><br>
+          
+          Furthermore, we study the model robutness against adversarial attacks. Our work shows that even without any information about the target model, one can still perform effective attacks (<a href="works/11209.XuJ.pdf">Xu et al, AAAI'22</a>). To handle the adversarial vulnerability problem, we further propose an unsupervised defense technique to robustify pre-trained deep graph models (<a href="works/11849.XuJ.pdf">Xu et al, AAAI'22</a>).
+          
+<!--           ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]). -->
+         </p>
+      
+<!--         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. 
+          
+          Our research aims to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to <i>network enhancement</i>. More speciﬁcally, the goal of network enhancement is to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. 
+          
+          From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of downstream task to guide the network denoising process 
+          
+          ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]).</p> -->
+    </div>
+
+    <div class="container">
+<!--         <div class="page-header">
+            <h2>Selected Research Work</h2>
+        </div>
+       -->
+<!--         <div class="page-header">
+            <h4>Network Denoising</h4>
+        </div>
+        <img width="300" src="img/network.png" align="left" style="margin-left:20px;margin-right:20px">
+        <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. (Xu et al, TKDD'20 [<a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
+ -->
+        <div class="page-header">
+            <h4>Anomaly Detection Framework</h4>
+        </div>
+        <img width="450" src="works/nguard/human_bot_pattern.png" align="left" style="margin-left:20px;margin-right:20px">
+        <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
+        <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p> -->
+        <p>We propose a general game bot detection framework for massively multiplayer online role playing games termed NGUARD+ (denoting NetEase Games’ Guard), which captures user patterns in order to identify game bots from player behavior sequences. NGUARD+ mainly employs attention-based methods to automatically differentiate game bots from humans. We provide a combination of supervised and unsupervised methods for game bot detection to detect game bots and new type of game bots even when the labels of game bots are limited ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p>
+<!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
+    </div>
+
+<br>
+
+    <a name="publication"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Publication List</h2>
+        </div>
+ 
+        <li style="margin:10px">
+        Yifei Sun, Haoran Deng, Yang Yang, Chunping Wang, <b>Jiarong Xu</b>, Renhong Huang, Linfeng Cao, Yang Wang and Lei Chen.
+        Beyond Homophily: Structure-aware Path Aggregation Graph Neural Network.
+          In <i>Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI'22). </i>  [<a href="http://yangy.org/works/gnn/IJCAI22_Beyond.pdf">PDF</a>]
+        </li>
+      
+        <li style="margin:10px">
+        Ziwei Chai, Siqi You, Yang Yang, Shiliang Pu, <b>Jiarong Xu</b>, Haoyang Cai and Weihao Jiang .
+        Can Abnormality be Detected by Graph Neural Networks?
+          In <i>Proceedings of the 31st International Joint Conference on Artificial Intelligence (IJCAI'22). </i> [<a href="http://yangy.org/works/gnn/IJCAI22_Abnormality.pdf">PDF</a>] 
+        </li>
+      
+        <li style="margin:10px">
+        <b>Jiarong Xu</b>, Yang Yang, Junru Chen, Xin Jiang, Chunping Wang, Jiangang Lu and Yizhou Sun. 
+        Unsupervised Adversarially Robust Representation Learning on Graphs. 
+          In <i>Proceedings of the 36th Conference on Artificial Intelligence (AAAI’22). </i>  [<a href="works/11849.XuJ.pdf">PDF</a>] [<a href="https://github.com/galina0217/robustgraph">Code</a>]
+        </li>
+      
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yizhou Sun, Xin Jiang, Yanhao Wang, Chunping Wang, Jiangang Lu and Yang Yang. 
+        Blindfolded Attackers Still Threatening: Strict Black-Box Adversarial Attacks on Graphs.
+          In <i>Proceedings of the 36th Conference on Artificial Intelligence (AAAI’22). </i>  [<a href="works/11209.XuJ.pdf">PDF</a>] [<a href="https://github.com/galina0217/stack">Code</a>]
+        </li>
+      
+        <li style="margin:10px">
+        Qinkai Zheng, Xu Zou, Yuxiao Dong, Yukuo Cen, Da Yin, <b>Jiarong Xu</b>, Yang Yang, and Jie Tang. 
+        Graph Robustness Benchmark: Benchmarking the Adversarial Robustness of Graph Machine Learning. 
+          In <i>Proceedings of the 35th Conference on Neural Information Processing Systems Track on Datasets and Benchmarks (NeurIPS’21 D&B). </i>  [<a href="https://openreview.net/pdf?id=NxWUnvwFV4">PDF</a>] [<a href="https://cogdl.ai/grb/home">Code</a>]
+        </li>
+      
+      
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Shiliang Pu, Yao Fu, Jun Feng, Weihao Jiang, Jiangang Lu and Cunping Wang.
+        NetRL: Task-aware Network Denoising via Deep Reinforcement Learning. 
+        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2021.</i>  [<a href="works/tkde2021_netrl_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/NetRL">Code</a>]
+        </li>
+      
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yang Yang, Chunping Wang, Zongtao Liu, Jing Zhang, Lei Chen and Jiangang Lu. 
+        Robust Network Enhancement from Flawed Networks. 
+        In <i>IEEE Transactions on Knowledge and Data Engineering (TKDE), 2020.</i>   [<a href="works/enet/tkde2020_robust_xu.pdf">PDF</a>] [<a href="https://github.com/galina0217/E-Net">Code</a>]
+        </li>
+
+        <li style="margin:10px"><b>Jiarong Xu</b>, Yifan Luo, Jianrong Tao, Changjie Fan, Zhou Zhao and Jiangang Lu. 
+        NGUARD+: A Attention-based Game Bot Detection Framework via Player Behavior Sequences. 
+        In <i>ACM Transactions on Knowledge Discovery from Data (TKDD), 2020.</i>  [<a href="works/nguard/nguard_plus.pdf">PDF</a>]
+        </li>
+
+        <li style="margin:10px">Jianrong Tao*, <b>Jiarong Xu*</b>, Linxia Gong, Yifu Li, Changjie Fan and Zhou Zhao (<b>*: Equal Contribution</b>).
+        NGUARD: A Game Bot Detection Framework for NetEase MMORPGs.
+        In <i>Proceedings of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD'18).</i>
+            [<a href="works/nguard/nguard.pdf">PDF</a>] [<a href="https://github.com/fuxiAIlab/NGUARD">Code</a>]
+        </li>
+      
+        <li style="margin:10px">Yiren Shen, Xiaoxian Ou, <b>Jiarong Xu</b>, Guanglin Zhang, Lin Wang and Dapeng Li.
+        Optimal energy storage management for microgrids with ON/OFF co-generator: A two-time-scale approach.
+        In <i>Proceedings of the 3rd IEEE Conference on Signal and Information Processing (GlobalSIP'15).</i>
+            [<a href="works/others/energy.pdf">PDF</a>]
+        </li>
+
+         <li style="margin:10px">Chen Chen, Xueyuan Li, Ye Yang, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu and Jinshui Chen and Jiangang Lu.
+        Parameter Self-Tuning of SISO Compact-Form Model-Free Adaptive Controller based on Neural Network with System Error Set as Input.
+        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
+            [<a href="works/others/siso.pdf">PDF</a>]
+        </li>
+
+         <li style="margin:10px">Ye Yang, Jinhou Han, Chen Chen, <b>Jiarong Xu</b>, Zuwei Liao, Xinggao Liu, Jinshui Chen and Jiangang Lu.
+        A PSO-LP Cooperative Algorithm for Mixed Integer Nonlinear Programming.
+        In <i>Proceedings of the 12th Asian Control Conference (ASCC'19).</i>
+            [<a href="works/others/psolp.pdf">PDF</a>]
+        </li>
+
+<!--          <li style="margin:10px"><b>Jiarong Xu</b>, Chen Chen, Ye Yang and Jiangang Lu.
+        Dynamic Modeling of Wax Hydrogenation Unit Based on LSTM-DNN Deep Learning.
+        In <i>Proceedings of the 29th Chinese Process Control Conference (CPCC'18).</i>
+        </li>
+
+         <li style="margin:10px"><b>Jiarong Xu</b> and Cao Yu.
+        A Particle Swarm Algorithm with Frog Leaping Behavior for designing optimal PID controller.
+        In <i>Proceedings of Chinese Process Automation Congress (CAC'15).</i>
+        </li>
+ -->
+    </div>
+    <a name="activities"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Academic Activities</h2>
+        </div>
+        <li style="margin:10px">
+        PC Members: KDD 2020-2022, AAAI 2023, WSDM 2023, ECML-PKDD 2022, SDM 2022
+        </li>
+      
+        <li style="margin:10px">
+        Reviewers: IEEE Transactions on Knowledge and Data Engineering (TKDE), IEEE Transaction on Big Data, IEEE Transactions on Network and Service Management
+        </li>
+    </div>
+
+  <!--   </div>
+    <a name="award"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Awards</h2>
+        </div>
+        <li style="margin:10px">
+        2019, Best Poster Award, Singapore, AI Summer School
+        <li style="margin:10px">
+        2016, Best graduation thesis of Donghua University
+        </li>
+        <li style="margin:10px">
+        2016, Outstanding Graduates of Shanghai
+        </li>
+        <li style="margin:10px">
+        2015, National Scholarship, China
+        </li>
+    </div>
+
+    <hr> -->
+
+    </div>
+    <a name="contact"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Contact</h2>
+        </div>
+                <div class="col-xs-12 col-md-8">
+                    <ul class="fa-ul">
+                        
+                        <li>
+                            <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+                            <span>
+                                <a href="mailto:jiarongxu@fudan.edu.cn">jiarongxu@fudan.edu.cn</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                            <span>Room 108, Siyuan Building</span></li>
+                    </ul>
+                </div>
+    </div>
+<!-- 
+    <div style="width: 33%; text-align: center; margin: 0 auto;">
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=tebCSlmqux9N9QrcNmOiT0PXzoscPYQd7ftMh0JTTv0&amp;cl=ffffff&amp;w=a"></script>
+    </div>
+    <hr> -->
+
+    <footer>
+        <p style="margin:10px;">Created by <a href=""> Jiarong Xu </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+    </footer>
+    </div> <!-- /container
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
