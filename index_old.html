@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Xuan Yang - Zhejiang University">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="img/homeicon.png">
+
+    <title>Xuan Yang's Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <img height="50" src="img/sheep2.jpeg" align="left" hspace="6" style="margin-left:-6p;margin-right:20px"> -->
+          <a class="navbar-brand" href="#">Xuan Yang</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publication">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <li><a href="#award">Awards</a></li> -->
+        </ul>
+
+          <!--
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+          -->
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <img height="150" src="img/yx.jpg" align="left" hspace="6" style="margin-left:-15p;margin-right:15px">
+        <p></p>
+        <p> I am currently a second grade master student at Department of computer science and technology, Zhejiang University, advised by <a href="http://yangy.org/">Yang Yang</a>. I obtained my bachelor degree from Zhejiang University.
+        	<!-- I obtained my bachelor degree in Electrical Engineering and Automation from Donghua University in 2016.  -->
+        </p>
+        <p> My research interests include graph representation learning, social network analysis and data mining. </p>
+        <p> xuanyang {at} zju [dot] edu [dot] cn </p>
+
+      </div>
+    </div>
+
+    <a name="research"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Research Work</h2>
+        </div>
+      
+        <div class="page-header">
+            <h4>Alleviate Recommendation System Disequilibrium</h4>
+        </div>
+        <img height="300" src="img/Taocode.jpg" align="left" style="margin-left:20px;margin-right:20px;margin-bottom:20px">
+      
+        <p>
+          Finding items with potential to increase sales is of great importance in online market. In this paper, we propose to study this novel and practical problem: rising star prediction. We call these potential items \emph{Rising Star}, which implies their ability to rise from low-turnover items to best-sellers in the future. Rising stars can be used to help with unfair recommendation in e-commerce platform, balance supply and demand to benefit the retailers and allocate marketing resources rationally.
+          Although the study of rising star can bring great benefits, it also poses challenges to us. The sales trend of rising star fluctuates sharply in the short-term and exhibits more contingency caused by some external events (e.g., COVID-19 caused increasing purchase of the face mask) than other items, which cannot be solved by existing sales prediction methods.
+
+          To address above challenges, in this paper, we observe that the presence of rising stars is closely correlated with the early diffusion of user interest in social networks, which is validated in the case of Taocode (an intermediary that diffuses user interest in Taobao).
+          Thus, we propose a novel framework, RiseNet, to incorporate the user interest diffusion process with the item dynamic features to effectively predict rising stars.
+          Specifically, we adopt a coupled mechanism to capture the dynamic interplay between items and user interest, and a special designed GNN based framework to quantify user interest.
+          Our experimental results on large-scale real-world datasets provided by Taobao demonstrate the effectiveness of our proposed framework.
+<!--           ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]). -->
+         </p>
+      
+<!--         <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. 
+          
+          Our research aims to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to <i>network enhancement</i>. More speciﬁcally, the goal of network enhancement is to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. 
+          
+          From one perspective, we turns the network enhancement problem into edge sequences generation, and employ a deep reinforcement learning framework to solve it, which takes advantage of downstream task to guide the network denoising process 
+          
+          ([<a href="works/enet/tkde2020_robust_xu.pdf">Xu et al, TKDE'20</a>, <a href="https://github.com/galina0217/E-Net">Code</a>]).</p> -->
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h4>Modeling COVID-19 Recovery</h4>
+        </div>
+        <img height="300" src="img/COVID.gif" align="left" style="margin-left:20px;margin-right:20px">
+        <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
+        <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p> -->
+        <p>Lockdown is a common policy used to deter the spread of COVID-19. However, it remains an open question how our society comes back to life after a lockdown. Understanding how cities bounce back from lockdown is critical for promoting the global economy and preparing for future pandemics. Here we propose a novel computational method based on electricity data to study the recovery process, and conduct a case study on Hangzhou. With the designed Recovery Index, we find a variety of recovery patterns in main sectors. One of the main reasons for this difference is policy, therefore, we aim to answer the question of how policies can best facilitate the recovery of society.
+           We first analyze how policy affects sectors and employ a Change-point Algorithm to provide a non-subjective approach to policy assessment. Furthermore, we design a model that can predict future recovery, allowing policies to adjust accordingly in advance. We design a deep neural network TPG to model recovery trends, which consists of the graph structure learning to perceive influences between sectors. With the model, we conduct simulation experiments and results offer insights to policy-making that the government should prioritize supporting sectors that have greater influence on others and are influential on the whole economy. ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p>
+<!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h4>Large-scale Graph</h4>
+        </div>
+        <img height="300" src="img/BigGraph.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
+        <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p> -->
+        <p>Designed DeepGraphlet with k-tuple feature and multi-task to estimate the graphlet counting.
+           Experiments on real graphs demonstrate that our method improves the estimation accuracy 60+%.
+           It achieves 20x speedup on hundreds of millions-scale graphs, and handles graphs with billions of edges.</p>
+        <p>Design a streaming model for large-scale dynamic graph setting, which aims to solve the problem of space collapsing over time.</p>
+<!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
+    </div>
+    <div class="container">
+<!--         <div class="page-header">
+            <h2>Selected Research Work</h2>
+        </div>
+       -->
+<!--         <div class="page-header">
+            <h4>Network Denoising</h4>
+        </div>
+        <img width="300" src="img/network.png" align="left" style="margin-left:20px;margin-right:20px">
+        <p>Network data in real-world tends to be error-prone due to incomplete sampling, imperfect measurements, etc.; this in turn results in inaccurate results when performing network analysis or modeling, such as node classiﬁcation and link prediction, on these ﬂawed networks. We aim to reconstruct a reliable network from a ﬂawed, undirected, unweighted network, a process referred to network enhancement. More speciﬁcally, network enhancement aims to detect the noisy links that are observed in the network but should not exist in the real world, as well as to predict the missing links that do indeed exist in the real world yet remain unobserved. (Xu et al, TKDD'20 [<a href="https://github.com/galina0217/E-Net">Code</a>]).</p>
+ -->
+        <div class="page-header">
+            <h4>Multimodal Learning</h4>
+        </div>
+        <img height="300" src="img/multimodal.jpg" align="left" style="margin-left:20px;margin-right:20px">
+        <!-- <p>Game bots are automated programs that assist cheating users and enable them to obtain huge superiority, leading to an imbalance in the game ecosystem and the collapse of user interest. Therefore, game bot detection becomes particularly important and urgent. Among many kinds of online games, massively multiplayer online role playing games (MMORPGs), such as World of Warcraft and AION, provide immersive gaming experience and attract many loyal fans. At the same time, however, game bots in MMORPGs have proliferated in volume and method, evolving with the real-world detection methods and showing strong diversity, leaving MMORPG bot detection efforts extremely difficult. </p>
+        <p>To deal with the fast-changing nature of game bots, we here proposed a generalized game bot detection framework for MMORPGs termed NGUARD, denoting NetEase Games’ Guard. NGUARD takes charge of automatically differentiating game bots from humans for MMORPGs. In detail, NGUARD exploits a combination of supervised and unsupervised methods. Supervised models are utilized to detect game bots in observed patterns according to the training data. Meanwhile, unsupervised solutions are employed to detect clustered game bots and help discovering new bots. The game bot detection framework NGUARD has been implemented and deployed in multiple MMORPG productions in the NetEase Game portfolio, achieving remarkable performance improvement and acceleration compared to traditional methods. Moreover, the framework reveals outstanding robustness for game bots in mutated patterns and even in completely new patterns on account of the design of the auto-iteration mechanism ([<a href="works/nguard/nguard.pdf">Tao and Xu et al, KDD'18</a>];[<a href="works/nguard/nguard_plus.pdf">Xu et al, TKDD'20</a>]).</p> -->
+        <p>Introduce the graph modal into the multimodal learning on social media data, create a new large-scale multimodal dataset.
+           Design a multi-step graph alignment pretrain task to improve the understanding of user, image and text information.
+           A momentum distillation model for data augmentation.</p>
+<!--         <p style="margin-left:20px">Paper:<img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard.pdf" style="margin-left:-3px; margin-right: 3px;">nguard.pdf</a> <img height="20" src="img/pdf.jpeg" style="margin: 3px;"><a href="works/nguard/nguard_plus.pdf" style="margin-left:-3px; margin-right: 3px;">nguard+.pdf</a> </p> -->
+    </div>
+
+<br>
+
+    <a name="publication"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Publication List</h2>
+        </div>
+ 
+        <li style="margin:10px">
+        <b>Xuan Yang</b>, Yang Yang, Chenhao Tan, Yinghe Lin, Zhengzhe Fu, Fei Wu, Yueting Zhuang.
+        Unfolding and Modeling the Recovery Process after COVID Lockdowns. Submitted to <i>Nature Human Behavior. </i>  [<a href="https://arxiv.org/pdf/2203.14807.pdf">PDF</a>]
+        </li>
+      
+        <li style="margin:10px">
+        <b>Xuan Yang</b>, Yang Yang, Jintao Su, Yifei Sun, Shen Fan, Zhongyao Wang, Jun Zhan, and Jingmin Chen. Who's Next: Rising Star Prediction via Diffusion of User Interest in Social Networks.
+        In <i>IEEE Transaction on Knowledge and Data Engineering, doi: 10.1109/TKDE.2022.3151835, 2022</i> [<a href="https://arxiv.org/pdf/2203.14807.pdf">PDF</a>]
+        </li>
+      
+        <li style="margin:10px">
+        Jintao Su, Yang Yang, <b>Xuan Yang</b>, Yuxiao Dong and ChilieTan。
+        ”DeepGraphlet:Estimating Local Graphlet Frequencies with Graph Neural Networks”.
+        <i>IEEE Transaction on Knowledge and Data Engineering Submission</i>.
+        </li>
+      
+        <li style="margin:10px">
+        Teng Ke, Yang Yang, Shiliang Pu,  <b>Xuan Yang</b>, Quanjin Tao, Yifei Sun, Weihao Jiang, Hui Wang and Yingye Yu.
+        "Detecting Telecommunication Frauds by Human-in-the-Loop Graph Neural Networks".
+        <i>IEEE Transaction on Knowledge and Data Engineering Submission</i>.
+        </li>
+      
+        <li style="margin:10px">
+        Taoran Fang, Zhiqing Xiao, Chunping Wang, Jiarong Xu, <b>Xuan Yang</b>, Yang Yang.
+        DropMessage: Unifying Random Dropping for Graph Neural Networks. <i>NeurIPS 2022 Conference Submission</i>.
+        </li>
+
+    </div>
+    <a name="activities"></a>
+
+<!--    <div class="container">-->
+<!--        <div class="page-header">-->
+<!--            <h2>Voluntary Activities</h2>-->
+<!--        </div>-->
+<!--        <li style="margin:10px">-->
+<!--        PC Members: KDD 2020-2022, AAAI 2023, WSDM 2023, ECML-PKDD 2022, SDM 2022-->
+<!--        </li>-->
+<!--      -->
+<!--        <li style="margin:10px">-->
+<!--        Reviewers: IEEE Transactions on Knowledge and Data Engineering (TKDE), IEEE Transaction on Big Data, IEEE Transactions on Network and Service Management-->
+<!--        </li>-->
+<!--    </div>-->
+
+  <!--   </div>
+    <a name="award"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Selected Awards</h2>
+        </div>
+        <li style="margin:10px">
+        2019, Best Poster Award, Singapore, AI Summer School
+        <li style="margin:10px">
+        2016, Best graduation thesis of Donghua University
+        </li>
+        <li style="margin:10px">
+        2016, Outstanding Graduates of Shanghai
+        </li>
+        <li style="margin:10px">
+        2015, National Scholarship, China
+        </li>
+    </div>
+
+    <hr> -->
+
+    </div>
+    <a name="contact"></a>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>Contact</h2>
+        </div>
+                <div class="col-xs-12 col-md-8">
+                    <ul class="fa-ul">
+                        
+                        <li>
+                            <i class="fa-li fa fa-envelope fa-2x" aria-hidden="true"></i>
+                            <span>
+                                <a href="mailto:xuany@zju.edu.cn">xuany@zju.edu.cn</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-li fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                            <span>Room 314, Cao Guang Biao East Building</span></li>
+                    </ul>
+                </div>
+    </div>
+
+    <!-- ====================MODULE TO RECORD VISITED COUNT====================-->
+    <div style="margin:10px auto;width: 200px;height: 100px; pointer-events: none;">
+        <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ZfI9vrWx0CCuk1XZ0ew3Cg0wQc7izTqfrzAaAWx8Yck&cl=ffffff&w=a"></script>
+    </div>
+
+<!-- 
+    <div style="width: 33%; text-align: center; margin: 0 auto;">
+        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=tebCSlmqux9N9QrcNmOiT0PXzoscPYQd7ftMh0JTTv0&amp;cl=ffffff&amp;w=a"></script>
+    </div>
+    <hr> -->
+
+    <div>
+    <footer>
+        <p style="margin:10px;text-align:center;">Created by <a href=""> Xuan Yang </a>, using a design from <a href="http://getbootstrap.com/"> bootstrap </a></p>
+    </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
