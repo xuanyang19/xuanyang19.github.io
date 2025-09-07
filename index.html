@@ -103,7 +103,7 @@
                         </div>
                     </td>
                     <td style="width:50%;vertical-align:middle;padding-top:30px;">
-                        <papertitle style="font-size: 105%;">Local Shapley: Exploring Locality in Shapley Value Computation
+                        <papertitle style="font-size: 105%;">Local Shapley: Exploring Locality in Data Valuation
                         </papertitle>
 
                         <br>
@@ -111,13 +111,11 @@
                         <a style="color: blue;" href="https://scholar.google.com/citations?user=zIMEVKsAAAAJ&hl=en&oi=ao">Jian Pei</a>
                         <br>
                         <br>
-                        For machine learning models, we assess the importance of data using the Shapley value methods.
-                        To overcome the high computational costs of Shapley value calculations,
-                        we leverage the “locality” properties inherent in models such as K-Nearest Neighbors (KNN) and Graph Neural Networks (GNN).
-                        This inspired the development of the Local Shapley method,
-                        which integrates localized computations to enhance efficiency while maintaining the four key properties of Shapley values: fairness, efficiency, symmetry, and additivity.
-                        Additionally, we propose efficient sampling-based approximation algorithms to extend the method's applicability to deep learning models.
-
+                        Shapley value is a principled method for fair data valuation but suffers from prohibitive computational costs.
+                        We explore how utilizing the locality inherent in machine learning models can be leveraged to Shapley computation without compromising fairness.
+                        We propose Local Shapley, utilizing the locality inherent in machine learning models, reducing the overall complexity from exponential in the dataset size to linear.
+                        Then we design Local Shapley via Model Reuse(LSMR) algorithm that enables efficient reuse of trained models, ensuring the optimal model training cost.
+                        We further extend our framework to Graph Neural Networks (GNNs) and do experiments across multiple datasets and models demonstrate LSRM is an efficient and principled solution.
                         <br>
 
                     </td>
