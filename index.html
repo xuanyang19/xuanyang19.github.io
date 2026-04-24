@@ -119,15 +119,13 @@
                                         <br>
                                         <em><b>ACL</b></em>, 2026 <span style="color:red;">(Oral)</span>
                                         <br>
-                                        We introduce Batch-of-Thought (BoT), a training-free approach that enables
-                                        collective reasoning across multiple samples, and BoT-Reflection (BoT-R), a
-                                        multi-agent framework where models collaboratively reflect and refine their
-                                        reasoning, effectively leveraging mutual information beyond isolated inference.
-                                        By performing comparative analysis across batches, BoT identifies high-quality
-                                        reasoning templates and detects errors through consistency checks, amortizing
-                                        computational costs across queries. Experiments across three model families and
-                                        six benchmarks show BoT-R consistently improves accuracy and confidence
-                                        calibration while reducing inference costs by up to 61%.
+                                        We introduce Batch-of-Thought (BoT), a training-free method that processes
+                                        related queries jointly to identify shared reasoning templates and catch errors
+                                        through consistency checks, and BoT-Reflection (BoT-R), a multi-agent
+                                        architecture where a Reflector performs joint evaluation to unlock mutual
+                                        information unavailable in isolated inference. Experiments across three model
+                                        families and six benchmarks demonstrate that BoT-R consistently improves
+                                        accuracy and confidence calibration while reducing inference costs by up to 61%.
                                     </p>
                                 </td>
                             </tr>
