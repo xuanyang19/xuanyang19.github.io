@@ -80,18 +80,18 @@
                                 </td>
                                 <td width="75%" valign="middle">
                                     <p>
-                                        <b>Local Shapley: Efficient Data Valuation for Model Training
-                                        </b> &nbsp&nbsp
+                                        <a href="https://arxiv.org/pdf/2603.03672">Local Shapley: Efficient Data Valuation for Model Training
+                                        </a> &nbsp&nbsp
+                                        <a href="https://github.com/xuanyang19/Local_Shapley_Supplemental_Material">[Code]</a>
                                         <br>
-                                        <b>Xuan Yang</b>, Jian Pei
+                                        <b>Xuan Yang</b>, Hsi-Wen Chen, Ming-Syan Chen, Jian Pei
                                         <br>
-                                        We propose Local Shapley, a principled yet efficient approach to fair data
-                                        valuation that leverages the locality of machine learning models to reduce
-                                        Shapley value computation from exponential to linear complexity. Building on
-                                        this, our Local Shapley via Model Reuse (LSMR) algorithm efficiently reuses
-                                        trained models to minimize training costs. We further extend LSMR to Graph
-                                        Neural Networks, with experiments demonstrating its effectiveness and
-                                        scalability across diverse datasets and models.
+                                        We propose Local Shapley, which formalizes model-induced locality through support
+                                        sets to focus Shapley computation on influential training points rather than
+                                        exhaustive coalition enumeration. LSMR trains each support once via support
+                                        mapping, and LSMR-A provides an unbiased Monte Carlo estimator for larger
+                                        supports. Experiments across multiple model families demonstrate substantial
+                                        retraining reductions and speedups while preserving high valuation fidelity.
                                     </p>
                                 </td>
                             </tr>
@@ -112,8 +112,11 @@
                                         <a href="https://arxiv.org/abs/2601.02950">Batch-of-Thought: Cross-Instance
                                             Learning for Enhanced LLM Reasoning
                                         </a> &nbsp&nbsp
+                                        <a href="https://github.com/xuanyang19/BoT">[Code]</a>
                                         <br>
                                         <b>Xuan Yang</b>, Furong Jia, Roy Xie, Xi Xiong, Jian Li, Monica Agrawal
+                                        <br>
+                                        <em><b>ACL</b></em>, 2026 <span style="color:red;">(Oral)</span>
                                         <br>
                                         We introduce Batch-of-Thought (BoT), a training-free approach that enables
                                         collective reasoning across multiple samples, and BoT-Reflection (BoT-R), a
