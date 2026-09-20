@@ -29,7 +29,6 @@ section[id], article[id] { scroll-margin-top: 12px; }
 .header-inner { min-height: 49px; display: flex; align-items: center; justify-content: flex-end; }
 nav { display: flex; align-items: center; gap: 28px; }
 nav a { font-size: 12px; color: var(--muted); padding-block: 10px; }
-nav .nav-cv { color: var(--blue); font-weight: 600; }
 
 .hero { display: grid; grid-template-columns: minmax(0, 1fr) 192px; column-gap: 42px; align-items: start; padding: 34px 0 27px; }
 h1 { font-size: 35px; font-weight: 600; line-height: 1.25; letter-spacing: -.9px; margin-bottom: 17px; }
@@ -44,7 +43,6 @@ h1 { font-size: 35px; font-weight: 600; line-height: 1.25; letter-spacing: -.9px
 .portrait img { width: 100%; height: auto; border-radius: 3px; }
 .profile-links { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 20px; margin-top: 15px; }
 .profile-links a { font-size: 12px; padding-block: 5px; }
-.profile-links .cv-link { font-weight: 650; }
 .profile-links .email-link { font-size: 12px; }
 
 .section { padding-top: 32px; }
